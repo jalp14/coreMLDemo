@@ -12,6 +12,8 @@
 		A283BEC021AF4734000BDCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A283BEBE21AF4734000BDCBC /* Main.storyboard */; };
 		A283BEC221AF473B000BDCBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A283BEC121AF473B000BDCBC /* Assets.xcassets */; };
 		A283BEC521AF473B000BDCBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A283BEC321AF473B000BDCBC /* LaunchScreen.storyboard */; };
+		A283BECD21AF4E26000BDCBC /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A283BECC21AF4E25000BDCBC /* Inceptionv3.mlmodel */; };
+		A283BECF21AF5271000BDCBC /* CustomOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A283BECE21AF5271000BDCBC /* CustomOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A283BEC121AF473B000BDCBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A283BEC421AF473B000BDCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A283BEC621AF473B000BDCBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A283BECC21AF4E25000BDCBC /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		A283BECE21AF5271000BDCBC /* CustomOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		A283BEAE21AF4733000BDCBC = {
 			isa = PBXGroup;
 			children = (
+				A283BECE21AF5271000BDCBC /* CustomOutput.swift */,
 				A283BEB921AF4734000BDCBC /* CoreML Demo */,
 				A283BEB821AF4734000BDCBC /* Products */,
 			);
@@ -56,6 +61,7 @@
 			children = (
 				A283BEBA21AF4734000BDCBC /* AppDelegate.swift */,
 				A283BEBC21AF4734000BDCBC /* ViewController.swift */,
+				A283BECC21AF4E25000BDCBC /* Inceptionv3.mlmodel */,
 				A283BEBE21AF4734000BDCBC /* Main.storyboard */,
 				A283BEC121AF473B000BDCBC /* Assets.xcassets */,
 				A283BEC321AF473B000BDCBC /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A283BEBD21AF4734000BDCBC /* ViewController.swift in Sources */,
+				A283BECF21AF5271000BDCBC /* CustomOutput.swift in Sources */,
+				A283BECD21AF4E26000BDCBC /* Inceptionv3.mlmodel in Sources */,
 				A283BEBB21AF4734000BDCBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNA9PE68R4;
 				INFOPLIST_FILE = "CoreML Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNA9PE68R4;
 				INFOPLIST_FILE = "CoreML Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
